@@ -1,7 +1,9 @@
+
+import Background from "./pages/Landing/Background"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import LandingPage from "./pages/Landing/LandingPage";
 import "./App.css";
-import SignIn from "./components/SignIn";
+
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
       </nav>
 
       <Routes>
+        {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<Background />} />
       </Routes>
     </BrowserRouter>
   );

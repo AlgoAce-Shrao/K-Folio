@@ -7,6 +7,12 @@
     "module": "ESNext",
     "types": ["vite/client"],
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
 
     "baseUrl": ".",
     "paths": {
@@ -31,5 +37,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/components/SignIn.tsx"]
+  "include": ["src", "src/components/ui/SignIn.tsx", "src/components/LeftComponent"]
 }
